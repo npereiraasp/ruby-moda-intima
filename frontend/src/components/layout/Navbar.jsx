@@ -6,7 +6,7 @@ import {
   FiShoppingBag, FiHeart, FiUser, FiMenu, FiX,
   FiSearch, FiLogOut, FiSettings, FiPackage, FiChevronDown
 } from 'react-icons/fi';
-import { RiGemLine } from 'react-icons/ri';
+import { RiDiamondLine } from 'react-icons/ri';
 import api from '../../utils/api';
 
 export default function Navbar() {
@@ -65,7 +65,7 @@ export default function Navbar() {
             {/* Logo */}
             <Link to="/" className="flex items-center gap-2 shrink-0">
               <div className="w-8 h-8 bg-ruby-600 rounded-full flex items-center justify-center">
-                <RiGemLine className="text-white text-lg" />
+                <RiDiamondLine className="text-white text-lg" />
               </div>
               <div>
                 <span className="font-display text-xl font-semibold text-ruby-700 leading-none block">

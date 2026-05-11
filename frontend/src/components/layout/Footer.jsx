@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { FiInstagram, FiMail, FiPhone } from 'react-icons/fi';
-import { RiGemLine, RiWhatsappLine } from 'react-icons/ri';
+import { RiDiamondLine, RiWhatsappLine } from 'react-icons/ri';
 import { useEffect, useState } from 'react';
 import api from '../../utils/api';
 
@@ -19,7 +19,7 @@ export default function Footer() {
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-9 h-9 bg-ruby-600 rounded-full flex items-center justify-center">
-                <RiGemLine className="text-white text-xl" />
+                <RiDiamondLine className="text-white text-xl" />
               </div>
               <div>
                 <span className="font-display text-xl font-semibold text-white block leading-tight">
