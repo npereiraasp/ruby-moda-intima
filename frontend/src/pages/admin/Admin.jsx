@@ -2,8 +2,8 @@ import { useState, useEffect, useCallback } from 'react';
 import { Link, NavLink, Outlet, useNavigate } from 'react-router-dom';
 import { FiGrid, FiPackage, FiShoppingBag, FiUsers, FiSettings, FiLogOut, FiPlus, FiEdit2, FiTrash2, FiToggleLeft, FiToggleRight, FiCheck, FiX } from 'react-icons/fi';
 import { RiGemLine } from 'react-icons/ri';
-import { useAuth } from '../context/AuthContext';
-import api from '../utils/api';
+import { useAuth } from '../../context/AuthContext';
+import api from '../../utils/api';
 import toast from 'react-hot-toast';
 
 function formatPrice(v) {
