@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { Link, NavLink, Outlet, useNavigate } from 'react-router-dom';
 import { FiGrid, FiPackage, FiShoppingBag, FiUsers, FiSettings, FiLogOut, FiPlus, FiEdit2, FiTrash2, FiToggleLeft, FiToggleRight, FiCheck, FiX } from 'react-icons/fi';
-import { RiGemLine } from 'react-icons/ri';
+import { RiDiamondLine } from 'react-icons/ri';
 import { useAuth } from '../../context/AuthContext';
 import api from '../../utils/api';
 import toast from 'react-hot-toast';
@@ -34,7 +34,7 @@ export function AdminLayout() {
         <div className="p-5 border-b border-white/10">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 bg-ruby-600 rounded-full flex items-center justify-center">
-              <RiGemLine className="text-white" size={18} />
+              <RiDiamondLine className="text-white" size={18} />
             </div>
             <div>
               <span className="font-display text-base font-semibold text-white block leading-tight">Ruby Admin</span>
@@ -111,7 +111,7 @@ export function Dashboard() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 mb-8">
             {[
               { label: 'Pedidos (30 dias)', value: stats?.orders_this_month || 0, icon: FiShoppingBag, color: 'bg-blue-50 text-blue-600' },
-              { label: 'Receita (30 dias)', value: formatPrice(stats?.revenue_this_month), icon: RiGemLine, color: 'bg-green-50 text-green-600' },
+              { label: 'Receita (30 dias)', value: formatPrice(stats?.revenue_this_month), icon: RiDiamondLine, color: 'bg-green-50 text-green-600' },
               { label: 'Clientes', value: stats?.total_clients || 0, icon: FiUsers, color: 'bg-purple-50 text-purple-600' },
               { label: 'Produtos Ativos', value: stats?.active_products || 0, icon: FiPackage, color: 'bg-ruby-50 text-ruby-600' },
             ].map((stat, i) => (
