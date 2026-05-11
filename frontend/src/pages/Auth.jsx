@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { FiMail, FiLock, FiEye, FiEyeOff, FiUser, FiPhone } from 'react-icons/fi';
-import { RiGemLine } from 'react-icons/ri';
+import { RiDiamondLine } from 'react-icons/ri';
 import { useAuth } from '../context/AuthContext';
 import toast from 'react-hot-toast';
 
@@ -46,7 +46,7 @@ export function Login() {
         </div>
         <div className="relative text-white text-center px-12">
           <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-6">
-            <RiGemLine size={40} className="text-white" />
+            <RiDiamondLine size={40} className="text-white" />
           </div>
           <h2 className="font-display text-5xl font-bold mb-4">Ruby</h2>
           <p className="font-body text-white/80 text-lg">Beleza sem limites,<br/>conforto em cada tamanho</p>
@@ -63,7 +63,7 @@ export function Login() {
         <div className="w-full max-w-md">
           <div className="flex items-center gap-2 mb-8 lg:hidden">
             <div className="w-9 h-9 bg-ruby-600 rounded-full flex items-center justify-center">
-              <RiGemLine className="text-white text-lg" />
+              <RiDiamondLine className="text-white text-lg" />
             </div>
             <span className="font-display text-xl font-semibold text-ruby-700">Ruby - Moda Íntima</span>
           </div>
@@ -164,7 +164,7 @@ export function Register() {
         </div>
         <div className="relative text-white text-center px-12">
           <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-6">
-            <RiGemLine size={40} className="text-white" />
+            <RiDiamondLine size={40} className="text-white" />
           </div>
           <h2 className="font-display text-5xl font-bold mb-4">Ruby</h2>
           <p className="font-body text-white/80 text-lg">Crie sua conta e descubra<br/>o melhor da moda íntima plus size</p>
