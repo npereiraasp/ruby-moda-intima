@@ -689,3 +689,7 @@ export function AdminSettings() {
     </div>
   );
 }
+
+export default function Admin() {
+  return <AdminLayout />;
+}
