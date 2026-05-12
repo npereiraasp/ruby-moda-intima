@@ -184,3 +184,7 @@ export function Orders() {
     </div>
   );
 }
+
+export default function FavoritesOrders({ defaultTab }) {
+  return defaultTab === 'orders' ? <Orders /> : <Favorites />;
+}
