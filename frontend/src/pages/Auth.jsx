@@ -245,3 +245,8 @@ export function Register() {
     </div>
   );
 }
+
+export default function Auth({ defaultTab }) {
+  const [tab, setTab] = useState(defaultTab || 'login');
+  return tab === 'login' ? <Login onSwitch={() => setTab('register')} /> : <Register onSwitch={() => setTab('login')} />;
+}
